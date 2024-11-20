@@ -9,7 +9,7 @@ _host='Host: cdn.hancom.com'
 _referer='Referer: https://www.hancom.com/cs_center'
 DLAGENTS=("https::/usr/bin/curl -# -o %o -H ${_referer// /\\ } -H ${_host// /\\} %u")
 
-pkgname='hoffice'
+pkgname='hoffice-2022-beta'
 pkgver=11.20.0.1520
 pkgrel=4
 pkgdesc='Office document editor for Linux. Hancom Office Editor is an application to allow you to edit office documents that is developed and distributed by Hancom Inc.'
