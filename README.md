@@ -11,4 +11,5 @@ Office document editor for Linux. Hancom Office Editor is an application to allo
 https://aur.archlinux.org/packages/hoffice-2022-beta
 https://www.hancom
 
-![image](https://github.com/user-attachments/assets/0eed7d7c-eaec-4e34-a93e-01e35ddaa393)
+![image](https://github.com/user-attachments/assets/07a670fc-1a83-452d-ae2d-1f62d3954169)
+
