@@ -1,4 +1,5 @@
 # Maintainer : djnk8 <djnk8@mailinator.com>
+# Maintainer : Ein420 <Ein420@proton.me>
 
 HNCCONTEXT=opt/hnc/hoffice11/Bin/qt/plugins/platforminputcontexts
 NIMFLIB=libqt5im-nimf.so
