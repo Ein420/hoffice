@@ -1,3 +1,6 @@
+# Disclaimer
+This pkgbuild is primarly for Arch Linux users, however, if you use debian, the .deb file will be accessable via the sources in PKGBUILD.
+
 # hoffice-2022-beta
 Office document editor for Linux. Hancom Office Editor is an application to allow you to edit office documents that is developed and distributed by Hancom Inc.
 
