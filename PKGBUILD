@@ -56,8 +56,6 @@ package() {
 
   curl -# -o "${srcdir}/${KIMELIB}" -fL 'https://github.com/Riey/kime/releases/latest/download/libkime-qt-5.11.3.so'
 
-  msg2 "Extracting package binaries(data.tar.xz)..."
-
   bsdtar -xf "${srcdir}/data.tar.xz" -C "${pkgdir}/"
 
   install -Dm644 -t "${pkgdir}/usr/share/licenses/hoffice" "${srcdir}/LICENSE"
@@ -66,6 +64,4 @@ package() {
     install -Dm755 -t "${pkgdir}/${HNCCONTEXT}" "${srcdir}/${KIMELIB}"
     install -Dm755 -t "${pkgdir}/${HNCCONTEXT}" "${srcdir}/${NIMFLIB}"
   fi
-
-  msg2 "The error messages are from UTF-8 limitations. Please ignore it, as it does no harm."
 }
