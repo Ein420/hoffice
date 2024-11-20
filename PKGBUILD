@@ -15,7 +15,7 @@ pkgrel=4
 pkgdesc='Office document editor for Linux. Hancom Office Editor is an application to allow you to edit office documents that is developed and distributed by Hancom Inc.'
 arch=('x86_64')
 source=(
-  '1732118678_hoffice_11.20.0.1520_amd64.deb'
+  'https://download943.mediafire.com/4bv21q243r6gAxUO5iOVhRQaG9MZ6nENExMN57zbgI0Eyx0t9zW-NCFIpFInW46MwKCRkmGl_ArofJ4Qauv0RqvAKcaPEgz2YGQKDD-Q0mlVvV1utOH0O49djayFrML-JhGpZlZrkvchRiQwl8f1snNGIBRDLlwKoZDH9xcz3UfbbA/74beldrv8vkq3ga/1732118678_hoffice_11.20.0.1520_amd64.deb'
   'LICENSE'
   'libqt5im-nimf.so'
 )
