@@ -12,4 +12,6 @@ https://aur.archlinux.org/packages/hoffice-2022-beta
 https://www.hancom
 
 ![image](https://github.com/user-attachments/assets/07a670fc-1a83-452d-ae2d-1f62d3954169)
+![image](https://github.com/user-attachments/assets/e43aa7b5-d7a8-467f-b1a3-0b0cb8337220)
+![image](https://github.com/user-attachments/assets/dfe64db4-4f15-4e33-afbb-731eca816021)
 
