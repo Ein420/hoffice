@@ -1,8 +1,8 @@
-pkgbase = hoffice
+pkgbase = hoffice-2022-beta
 	pkgdesc = Office document editor for Linux. Hancom Office Editor is an application to allow you to edit office documents that is developed and distributed by Hancom Inc.
 	pkgver = 11.20.0.1520
 	pkgrel = 4
-	url = https://www.hancom.com/
+	url = https://github.com/Ein420/hoffice-2022-beta/
 	arch = x86_64
 	license = custom:hoffice
 	depends = cairo
@@ -16,9 +16,12 @@ pkgbase = hoffice
 	depends = libcups
 	depends = libcurl-gnutls
 	depends = libxcb
+	depends = openssl-1.1
 	depends = qt5-base
 	depends = qt5-x11extras
 	depends = zlib
+	provides = hoffice-2022-beta=${pkgver}
+	conflicts = hoffice
 	source = https://download943.mediafire.com/4bv21q243r6gAxUO5iOVhRQaG9MZ6nENExMN57zbgI0Eyx0t9zW-NCFIpFInW46MwKCRkmGl_ArofJ4Qauv0RqvAKcaPEgz2YGQKDD-Q0mlVvV1utOH0O49djayFrML-JhGpZlZrkvchRiQwl8f1snNGIBRDLlwKoZDH9xcz3UfbbA/74beldrv8vkq3ga/1732118678_hoffice_11.20.0.1520_amd64.deb
 	source = LICENSE
 	source = libqt5im-nimf.so
@@ -26,4 +29,4 @@ pkgbase = hoffice
 	sha256sums = 09b74399a45cde2b28e672784dbd1eb6397454a025e05a51fb3367eadb834583
 	sha256sums = d246c02a20a1e4ea123f9c2275dfc4a2ea091a65032ddbbe8a59bfc71418f60c
 
-pkgname = hoffice
+pkgname = hoffice-2022-beta
