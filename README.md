@@ -1,5 +1,5 @@
 # 주의 / Disclaimer
-본 pkgbuild는 아치리눅스 사용자를 대상으로 합니다. 하지만 본인이 데비안 및 배포판을 이용한다면, 본 레포의 PKGBUILD폴더 안에 있는 deb파일을 사용하셔도 됩니다.
+본 pkgbuild는 아치리눅스 사용자를 대상으로 합니다. 하지만 본인이 데비안 및 배포판을 이용한다면, 본 레포의 PKGBUILD 스크립트 안에 있는 deb파일다운로드 링크를 사용하셔도 됩니다.
 
 This pkgbuild is primarly for Arch Linux users, however, if you use debian, the .deb file will be accessable via the sources in PKGBUILD.
 
