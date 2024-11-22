@@ -1,5 +1,6 @@
 # Maintainer : 00ein00 <Ein420@proton.me>
 
+HNCDIR=opt/hnc
 HNCCONTEXT=opt/hnc/hoffice11/Bin/qt/plugins/platforminputcontexts
 NIMFLIB=libqt5im-nimf.so
 KIMELIB=libkime-qt-5.11.3.so
@@ -19,7 +20,7 @@ source=(
   'libqt5im-nimf.so'
 )
 
-url='https://github.com/Ein420/hoffice-2022-beta/'
+url='https://www.hancom.com'
 
 license=('custom:hoffice')
 makedepends=('wget')
@@ -41,8 +42,10 @@ post_upgrade() {
 }
 
 pre_remove() {
+  echo "Removing installed files..."
   if [[ -f "/${HNCCONTEXT}/${NIMFLIB}" ]]; then
     rm -vf "/${HNCCONTEXT}/${NIMFLIB}"
+    rm -rf "/${HNCDIR}"
   fi
 }
 
@@ -63,5 +66,19 @@ package() {
     install -Dm755 -t "${pkgdir}/${HNCCONTEXT}" "${srcdir}/${KIMELIB}"
     install -Dm755 -t "${pkgdir}/${HNCCONTEXT}" "${srcdir}/${NIMFLIB}"
   fi
+
+  mkdir -p "$pkgdir"/usr/bin/
+  echo "Creating symbolic link: /opt/hnc/hoffice11/Bin/hwp -> /usr/bin/hwp"
+  echo '"/opt/hnc/hoffice11/Bin/hwp" $@' >"$pkgdir"/usr/bin/hwp
+  chmod +x "$pkgdir"/usr/bin/hwp
+  echo "Creating symbolic link: /opt/hnc/hoffice11/Bin/hsl -> /usr/bin/hsl"
+  echo '"/opt/hnc/hoffice11/Bin/hsl" $@' >"$pkgdir"/usr/bin/hsl
+  chmod +x "$pkgdir"/usr/bin/hsl
+  echo "Creating symbolic link: /opt/hnc/hoffice11/Bin/hword -> /usr/bin/hword"
+  echo '"/opt/hnc/hoffice11/Bin/hword" $@' >"$pkgdir"/usr/bin/hword
+  chmod +x "$pkgdir"/usr/bin/hword
+  echo "Creating symbolic link: /opt/hnc/hoffice11/Bin/hcl -> /usr/bin/hcl"
+  echo '"/opt/hnc/hoffice11/Bin/hcl" $@' >"$pkgdir"/usr/bin/hcl
+  chmod +x "$pkgdir"/usr/bin/hcl
 
 }
